@@ -14,7 +14,7 @@ router.post('/webhook/:siteId', async (req, res) => {
     // noinspection HttpUrlsUsage
     let response = await axios.post(`http://asuna.vps.yggdrasil.cat:5000/deploy/${req.params.siteId}`, JSON.stringify({
         domains: site.deployConfig.domains,
-        repoUrl: req.body.repository.url,
+        repoUrl: req.body.repository.clone_url,
         serveFolder: site.deployConfig.serveFolder,
         branch: site.deployConfig.branch,
         environment: site.deployConfig.environment,
