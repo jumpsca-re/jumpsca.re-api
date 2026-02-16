@@ -18,7 +18,7 @@ module.exports = {
 	deploy : {
 		phoenix : {
 			"user" : "jumpscare",
-			"host" : ["10.3.3.1"],
+			"host" : ["10.5.2.2"],
 			"ref"  : "origin/phoenix",
 			"repo" : "git@github.com:LITdevs/jumpsca.re-api.git",
 			"path" : "/home/jumpscare/phoenix",
@@ -26,7 +26,7 @@ module.exports = {
 		},
 		production : {
 			"user" : "jumpscare",
-			"host" : ["10.3.3.1"],
+			"host" : ["10.5.2.2"],
 			"ref"  : "origin/prod",
 			"repo" : "git@github.com:LITdevs/jumpsca.re-api.git",
 			"path" : "/home/jumpscare/production",

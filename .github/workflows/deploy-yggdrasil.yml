@@ -38,7 +38,7 @@ jobs:
           sudo chmod 600 ~/.ssh/id_rsa
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null
           ssh-add ~/.ssh/id_rsa
-          ssh-keyscan -H 10.3.3.1 > ~/.ssh/known_hosts
+          ssh-keyscan -H 10.5.2.2 > ~/.ssh/known_hosts
       - run: git reset --hard
       - run: npx pm2 deploy yggdrasil.config.cjs phoenix
         env:
